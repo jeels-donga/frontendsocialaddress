@@ -67,7 +67,9 @@ const SideNav = () => {
               <img
                 src={item.icon}
                 alt={item.label}
-                className="w-5 h-5 shrink-0"
+                className={`shrink-0 ${
+                  item.icon.includes("sam_ai") ? "w-7 h-7" : "w-5 h-5"
+                }`}
                 style={
                   isActive
                     ? {
